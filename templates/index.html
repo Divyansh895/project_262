@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+
+    body {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 25px;
+        background-color: darkslategrey;
+    }
+
+    h1 {
+        color: skyblue;
+    }
+
+    h5{
+        color:cyan;
+        background-color: yellowgreen;
+    }
+    input[type="submit"]
+    {
+        background-color: #4CAF50;
+        color: white;
+        margin: 4px 2px;
+    }
+
+</style>
+</head>
+
+
+<body>
+    <h1>Advance Calculator</h1><hr>
+    <form method="POST">
+        <label>Enter expression</label><br><br>
+        <select class="is-focused is-large"name="operation"aria-label="operationDropdown"id="Choose Operation">
+        <option value="simplify">Simplify</option>
+        <option value="factor">Factor</option>
+        </select>
+        <input placeholder="Expression" name="text">
+        <input type="submit">
+    </form>
+    <p>Your equation is {{ equation }} == {{ result }}</p>
+    <footer>
+        <h5>Created By- The one and only sMr.Divyansh Patel</h5>
+    </footer>
+</body>
+</html>
